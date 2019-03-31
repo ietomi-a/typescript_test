@@ -1,13 +1,17 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 //import {SimpleForm} from "./SimpleForm"
-import {SimpleClock} from "./SimpleClock"
+//import {SimpleClock} from "./SimpleClock"
+import {CycleCheck} from "./CycleCheck"
 
 // ReactDOM.render(
 // 	<SimpleForm />, document.getElementById("root") )
 
+// ReactDOM.render(
+// 	<SimpleClock />, document.getElementById("root") )
+
 ReactDOM.render(
-	<SimpleClock />, document.getElementById("root") )
+ 	<CycleCheck />, document.getElementById("root") )
 
 // 以下を付け加えると <SimpleForm /> が上書きされる。
 // function Greeting (props) {
