@@ -1,6 +1,9 @@
 import * as React from "react"
 
-export class SimpleForm extends React.Component<{}, { value: string }> {
+
+type MyProps = {};
+type MyState = { value: string };
+export class SimpleForm extends React.Component<MyProps, MyState> {
     constructor (props) {
 	super(props)
 	this.state = { value: "" }
