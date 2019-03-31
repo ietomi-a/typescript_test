@@ -4,22 +4,22 @@ import * as React from "react"
 type MyProps = {};
 type MyState = { value: any };
 export class SimpleForm extends React.Component<MyProps, MyState> {
-    constructor (props:any) {
+    constructor (props) {
 	super(props)
 	this.state = { value: "" }
     }
-    doChange (e: any) {
+    doChange (e) {
 	const newValue = e.target.value
 	this.setState( {value: newValue} )
     }
-    doSubmit (e: any) {
+    doSubmit (e) {
 	window.alert( " value send: " + this.state.value )
 	console.log( "in console, value send: " + this.state.value )
 	e.preventDefault()
     }
     render () {
-	const doChange = (e:any) => this.doChange(e)
-	const doSubmit = (e:any) => this.doSubmit(e)
+	const doChange = (e) => this.doChange(e)
+	const doSubmit = (e) => this.doSubmit(e)
 	return ( <form onSubmit={doSubmit}>
 		   <input type="text"
 		          value={this.state.value}
