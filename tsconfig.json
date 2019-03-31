@@ -4,7 +4,7 @@
 	"sourceMap": true,
 	"strictNullChecks": true,
 	"strictPropertyInitialization": true,
-	"noImplicitAny": false,  // error message が処理し切れないので断念.
+	"noImplicitAny": true,
 	"noImplicitReturns": true,
 	"module": "commonjs",
 	"target": "es5",
